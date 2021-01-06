@@ -4,4 +4,12 @@
     $('.collapsible').collapsible();
 
     $('.tooltipped').tooltip();
+
+    $('.datepicker').datepicker({format:"dd mmmm yy",
+                                yearRange: 3,
+                                showClearBtn: true,
+                                i18n: {
+                                    done: "Select"
+                                }
+                            });
   });
