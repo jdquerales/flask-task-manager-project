@@ -12,4 +12,6 @@
                                     done: "Select"
                                 }
                             });
+
+    $('select').formSelect();
   });
