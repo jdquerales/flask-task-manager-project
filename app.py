@@ -1,3 +1,4 @@
+  
 import os
 from flask import (
     Flask, flash, render_template,
@@ -19,7 +20,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_tasks")
 def get_tasks():
-    tasks = mongo.db.task.find()
+    tasks = list(mongo.db.task.find())
     return render_template("tasks.html", tasks = tasks)
 
 
@@ -103,4 +104,3 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
-
