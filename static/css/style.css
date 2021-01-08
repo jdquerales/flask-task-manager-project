@@ -15,9 +15,10 @@
     line-height: 42px;
 }
 
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 992px){
 nav .brand-logo {
     left: 30%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+}
 }
